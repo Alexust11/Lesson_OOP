@@ -2,11 +2,13 @@ public class human {
     int  yearOfBirth;
     String name;
     String town;
+    String job;
 
-    public human(int yearOfBirth, String name, String town) {
+    public human(int yearOfBirth, String name, String town, String job) {
         this.yearOfBirth = yearOfBirth;
         this.name = name;
         this.town = town;
+        this.job=job;
     }
 
     public int getYearOfBirth() {
@@ -33,8 +35,17 @@ public class human {
         this.town = town;
     }
 
+    public String getJob() {
+        return job;
+    }
+
+    public void setJob(String job) {
+        this.job = job;
+    }
+
     @Override
+
     public String toString() {
-        return " Привет! Меня зовут "+name+".  Я из города "+town+". Я родился(лась) в "+(2022-yearOfBirth)+ " году. Будем знакомы!";
+        return " Привет! Меня зовут "+name+".  Я из города "+town+". Я родился(лась) в "+(2022-yearOfBirth)+ " году. Я работаю на должности: "+ job+". Будем знакомы!";
     }
 }
