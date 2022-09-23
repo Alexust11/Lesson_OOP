@@ -1,12 +1,22 @@
 public class Main {
     public static void main(String[] args) {
         // Задача 1,2
-        human max=new human(35, "Максим", "Минск", "бренд-менеджер");
-        human anna=new human(29, "Аня", "Москва", "методист образовательных программ");
-        human ket=new human(28, "Катя ", "Калининград", "продакт-менеджер");
-        human artem=new human(27, "Артем", "Москва", "директор по развитию бизнеса");
-
-
+        human max=new human();
+        human anna=new human();
+        human ket=new human();
+        human artem=new human();
+        max.name = "Максим";
+        max.yearOfBirth = 35;
+        max.town = "Минск";
+        anna.name = "Аня";
+        anna.yearOfBirth = 29;
+        anna.town = "Москва";
+        ket.name = "Катя";
+        ket.yearOfBirth = 28;
+        ket.town = "Калининград";
+        artem.name = "Артем";
+        artem.yearOfBirth = 27;
+        artem.town = "Москва";
 
 
         System.out.println(max.toString());
